@@ -1,0 +1,5 @@
+en:
+  bundle_name: "reST"
+  #
+  #
+  restIncludeFile: "reST include file"

@@ -1,0 +1,87 @@
+!!com.aptana.scripting.model.BundleElement
+author: Thomas Deuling
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: key_value
+    customProperties: null
+    displayName: key_value
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: add_list_item
+    customProperties: null
+    displayName: add_list_item
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: sort_keys_alphabetically
+    customProperties: null
+    displayName: sort_keys_alphabetically
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: convert_to_ruby
+    customProperties: null
+    displayName: convert_to_ruby
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: cheat_sheet
+    customProperties: null
+    displayName: cheat_sheet
+    path: bundle.rb
+    scope: null
+  commandName: reST
+  customProperties: null
+  displayName: reST
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [restIncludeFile]
+  description: null
+  displayName: reST include file
+  expansion: sdfghjk
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: {contact_email_rot_13: glcb3@pbqvat.zf}
+decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
+description: "Aptana Studio 3 - reST Bundle for TYPO3 CMS, Neos and Flow Documentation\
+  \ - http://coding.ms \n"
+displayName: reST
+fileTypeRegistry: &id002 {}
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s*.*(:|-) ?(&\w+)?(\{[^}"'']*|\([^)"'']*)?$)'}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
