@@ -1,5 +1,11 @@
 de:
-  bundle_name: "reST"
+  bundle_name: "reST-Documentation"
   #
   #
   restIncludeFile: "reST include file"
+  restMessage:     "reST - Message"
+  restCode:        "reST - Code"
+  restToDo:        "reST - ToDo"
+  restH1:          "reST - Headline 1"
+  restH2:          "reST - Headline 2"
+  restH3:          "reST - Headline 3"

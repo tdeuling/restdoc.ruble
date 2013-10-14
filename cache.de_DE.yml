@@ -45,68 +45,19 @@ children:
     displayName: cheat_sheet
     path: bundle.rb
     scope: null
-  commandName: reST
+  commandName: reST-Documentation
   customProperties: null
-  displayName: reST
-  path: bundle.rb
-  scope: null
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children: *id001
-    commandName: key_value
-    customProperties: null
-    displayName: key_value
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: add_list_item
-    customProperties: null
-    displayName: add_list_item
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: sort_keys_alphabetically
-    customProperties: null
-    displayName: sort_keys_alphabetically
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: convert_to_ruby
-    customProperties: null
-    displayName: convert_to_ruby
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: cheat_sheet
-    customProperties: null
-    displayName: cheat_sheet
-    path: bundle.rb
-    scope: null
-  commandName: reST
-  customProperties: null
-  displayName: reST
+  displayName: reST-Documentation
   path: bundle.rb
   scope: null
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   category: reST-Documentation
   customProperties:
-    prefix_values: [restIncludeFile]
+    prefix_values: [..include]
   description: null
   displayName: reST include file
-  expansion: sdfghjk
+  expansion: '.. include:: ${1:../Readme.rst}'
   iconPath: null
   input: [none]
   inputPath: null
@@ -122,10 +73,123 @@ children:
   async: false
   category: reST-Documentation
   customProperties:
-    prefix_values: [restIncludeFile]
+    prefix_values: [..note]
   description: null
-  displayName: reST include file
-  expansion: sdfghjk
+  displayName: reST - Message
+  expansion: '.. ${1:note/important/tip/warning}:: $0'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..code]
+  description: null
+  displayName: reST - Code
+  expansion: ".. code-block:: ${1:ts/html/php/css/js}\n    \n    $0\n    \n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..todo]
+  description: null
+  displayName: reST - ToDo
+  expansion: ".. TODO:\n    @todo: $0"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..h1]
+  description: null
+  displayName: reST - Headline 1
+  expansion: '====================================================================
+
+    $0
+
+    ====================================================================
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..h2]
+  description: null
+  displayName: reST - Headline 2
+  expansion: '--------------------------------------------------------------------
+
+    $0
+
+    --------------------------------------------------------------------
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..h13]
+  description: null
+  displayName: reST - Headline 3
+  expansion: '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    $0
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    '
   iconPath: null
   input: [none]
   inputPath: null
@@ -142,7 +206,7 @@ customProperties: {contact_email_rot_13: glcb3@pbqvat.zf}
 decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
 description: "Aptana Studio 3 - reST Bundle for TYPO3 CMS, Neos and Flow Documentation\
   \ - http://coding.ms \n"
-displayName: reST
+displayName: reST-Documentation
 fileTypeRegistry: &id002 {}
 fileTypes: *id001
 foldingStartMarkers: *id002
