@@ -9,3 +9,5 @@ en:
   restH1:          "reST - Headline 1"
   restH2:          "reST - Headline 2"
   restH3:          "reST - Headline 3"
+  restFigure:      "reST - Figure/Image"
+  restLink:        "reST - Link"

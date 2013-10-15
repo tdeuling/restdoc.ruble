@@ -66,7 +66,7 @@ snippet t(:restH1) do |snip|
 end
 
 
-# reST h1
+# reST h2
 #####################################
 snippet t(:restH2) do |snip|
   snip.trigger = "..h2"
@@ -77,7 +77,7 @@ snippet t(:restH2) do |snip|
 end
 
 
-# reST h1
+# reST h3
 #####################################
 snippet t(:restH3) do |snip|
   snip.trigger = "..h13"
@@ -86,5 +86,25 @@ snippet t(:restH3) do |snip|
   snip.expansion+= "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
   snip.category = "reST-Documentation"
 end
- 
- 
+
+
+# reST Figure
+#####################################
+snippet t(:restFigure) do |snip|
+  snip.trigger = "..figure"
+  snip.expansion = ".. figure:: Images/${1:marker-save}.png\n"
+  snip.expansion+= "    :alt: ${2}\n"
+  snip.expansion+= "$0\n"
+  snip.category = "reST-Documentation"
+end
+
+
+# reST message
+#####################################
+snippet t(:restLink) do |snip|
+  snip.trigger = "..link"
+  snip.expansion = "`${1:label} <${2:link}>`_$0"
+  snip.category = "reST-Documentation"
+end
+
+

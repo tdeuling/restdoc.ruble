@@ -201,6 +201,44 @@ children:
   scope: null
   tags: *id001
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..figure]
+  description: null
+  displayName: reST - Figure/Image
+  expansion: ".. figure:: Images/${1:marker-save}.png\n    :alt: ${2}\n$0\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: reST-Documentation
+  customProperties:
+    prefix_values: [..link]
+  description: null
+  displayName: reST - Link
+  expansion: '`${1:label} <${2:link}>`_$0'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: glcb3@pbqvat.zf}
 decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
