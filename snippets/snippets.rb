@@ -28,7 +28,7 @@ end
 #####################################
 snippet t(:restMessage) do |snip|
   snip.trigger = "..note"
-  snip.expansion = ".. ${1:note/important/tip/warning}:: $0"
+  snip.expansion = ".. ${1:note/important/tip/warning/topics}:: $0"
   snip.category = "reST-Documentation"
 end
 
@@ -70,9 +70,8 @@ end
 #####################################
 snippet t(:restH2) do |snip|
   snip.trigger = "..h2"
-  snip.expansion = "--------------------------------------------------------------------\n"
   snip.expansion+= "$0\n"
-  snip.expansion+= "--------------------------------------------------------------------\n"
+  snip.expansion+= "====================================================================\n"
   snip.category = "reST-Documentation"
 end
 
@@ -80,10 +79,29 @@ end
 # reST h3
 #####################################
 snippet t(:restH3) do |snip|
-  snip.trigger = "..h13"
-  snip.expansion = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+  snip.trigger = "..h3"
+  snip.expansion+= "$0\n"
+  snip.expansion+= "--------------------------------------------------------------------\n"
+  snip.category = "reST-Documentation"
+end
+
+
+# reST h4
+#####################################
+snippet t(:restH4) do |snip|
+  snip.trigger = "..h4"
   snip.expansion+= "$0\n"
   snip.expansion+= "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+  snip.category = "reST-Documentation"
+end
+
+
+# reST h5
+#####################################
+snippet t(:restH5) do |snip|
+  snip.trigger = "..h5"
+  snip.expansion+= "$0\n"
+  snip.expansion+= "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
   snip.category = "reST-Documentation"
 end
 
@@ -99,11 +117,20 @@ snippet t(:restFigure) do |snip|
 end
 
 
-# reST message
+# reST link
 #####################################
 snippet t(:restLink) do |snip|
   snip.trigger = "..link"
   snip.expansion = "`${1:label} <${2:link}>`_$0"
+  snip.category = "reST-Documentation"
+end
+
+
+# reST fixed space text
+#####################################
+snippet t(:restFixedSpaceText) do |snip|
+  snip.trigger = "`"
+  snip.expansion = "``${1:fixedSpaceText}``$0"
   snip.category = "reST-Documentation"
 end
 
