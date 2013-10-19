@@ -70,7 +70,7 @@ end
 #####################################
 snippet t(:restH2) do |snip|
   snip.trigger = "..h2"
-  snip.expansion+= "$0\n"
+  snip.expansion = "$0\n"
   snip.expansion+= "====================================================================\n"
   snip.category = "reST-Documentation"
 end
@@ -80,7 +80,7 @@ end
 #####################################
 snippet t(:restH3) do |snip|
   snip.trigger = "..h3"
-  snip.expansion+= "$0\n"
+  snip.expansion = "$0\n"
   snip.expansion+= "--------------------------------------------------------------------\n"
   snip.category = "reST-Documentation"
 end
@@ -90,7 +90,7 @@ end
 #####################################
 snippet t(:restH4) do |snip|
   snip.trigger = "..h4"
-  snip.expansion+= "$0\n"
+  snip.expansion = "$0\n"
   snip.expansion+= "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
   snip.category = "reST-Documentation"
 end
@@ -100,7 +100,7 @@ end
 #####################################
 snippet t(:restH5) do |snip|
   snip.trigger = "..h5"
-  snip.expansion+= "$0\n"
+  snip.expansion = "$0\n"
   snip.expansion+= "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"
   snip.category = "reST-Documentation"
 end
