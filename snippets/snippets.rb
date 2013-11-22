@@ -37,7 +37,7 @@ end
 #####################################
 snippet t(:restCode) do |snip|
   snip.trigger = "..code"
-  snip.expansion = ".. code-block:: ${1:ts/html/php/css/js}\n"
+  snip.expansion = ".. code-block:: ${1:typoscript/html/php/css/js}\n"
   snip.expansion+= "    \n"
   snip.expansion+= "    $0\n"
   snip.expansion+= "    \n"
